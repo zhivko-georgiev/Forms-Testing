@@ -12,7 +12,7 @@ $("#searchItem").change(function() {
 $("#town").change(function() {
 	var townField = document.getElementById("town");
 	var townLength = townField.value.length;
-	var regex = /[^A-Za-z]/g
+	var regex = /[^A-Za-z ]/g
 
 	if (townLength < 4 || townLength > 20) {
 		$(this).after("<div class='alert alert-warning' id='success-alert' role='alert'>The town value should be between 4 and 20 chars long!</div>");

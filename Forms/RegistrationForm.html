@@ -8,102 +8,102 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
 
 
     <div class="container">
-        <form class="form-horizontal">
-            <fieldset>
-                <legend>Registration Form</legend>
-                <div class="form-group">
-                    <label for="inputUsername" class="col-lg-2 control-label">Username</label>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" id="inputUsername" placeholder="Username">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                    <div class="col-lg-10">
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-                    <div class="col-lg-10">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="birthDate" class="col-lg-2 control-label">Birth Date</label>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" id="birthDate" placeholder="Birth Date">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="country" class="col-lg-2 control-label">Country</label>
-                    <div class="col-lg-2">
-                        <select class="form-control" id="country">
-                            <option>Bulgaria</option>
-                            <option>Germany</option>
-                            <option>Sweden</option>
-                            <option>USA</option>
-                            <option>China</option>
-                        </select>
-                    </div>
-                     <label for="city" class="col-lg-2 control-label">City</label>
-                    <div class="col-lg-2">
-                        <input type="text" class="form-control" id="city" placeholder="City">
-                    </div>
-                    <label for="city" class="col-lg-2 control-label">Street Address</label>
-                    <div class="col-lg-2">
-                        <input type="text" class="form-control" id="city" placeholder="Street Address">
-                    </div>
-                    
-                </div>
-                <div class="form-group">
-                    <label class="col-lg-2 control-label">Gender</label>
-                    <div class="col-lg-10">
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">Male
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Female
-                            </label>
+        <div class="jumbotron">
+            <form class="form-horizontal">
+                <fieldset>
+                    <legend>Registration Form</legend>
+                    <div class="form-group" id="username">
+                        <label for="inputUsername" class="col-sm-2 control-label">Username</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputUsername" placeholder="Username" required="">
                         </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="select" class="col-lg-2 control-label">Subscription Options</label>
 
-                    <div class="col-lg-10">
-                       
-
-                       
-
-                        <select multiple="" class="form-control" id="sub_select">
-                            <option>news</option>
-                            <option>special offers</option>
-                            <option>events</option>
-                            <option>magazine</option>
-                        </select>
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required="">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-lg-10 col-lg-offset-2">
-                        <button type="reset" class="btn btn-default">Cancel</button>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password" required="">
+
+                        </div>
                     </div>
-                </div>
-            </fieldset>
-        </form>
+                    <div class="form-group">
+                        <label for="birthDate" class="col-lg-2 control-label">Birth Date</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputBirthDate" placeholder="Birth Date" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="country" class="col-lg-2 control-label">Country</label>
+                        <div class="col-lg-2">
+                            <select class="form-control" id="country" required="">
+                                <option>Bulgaria</option>
+                                <option>Germany</option>
+                                <option>Sweden</option>
+                                <option>USA</option>
+                                <option>China</option>
+                            </select>
+                        </div>
+                        <label for="city" class="col-sm-2 control-label">City</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="city" placeholder="City" pattern="[^a-zA-Z0-9 ]">
+                        </div>
+                        <label for="city" class="col-lg-2 control-label">Street Address</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="city" placeholder="Street Address" pattern="[^a-zA-Z0-9 ]">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Gender</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">Male
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="select" class="col-sm-2 control-label">Subscription Options</label>
+
+                        <div class="col-lg-10">
+                            <select multiple="multiple" class="form-control" id="sub_select">
+                                <option>news</option>
+                                <option>special offers</option>
+                                <option>events</option>
+                                <option>magazine</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                            <button type="reset" class="btn btn-default">Cancel</button>
+                            <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </div>
+    <script src="regValidation.js"></script>
 </body>
 
 </html>

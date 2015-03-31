@@ -8,90 +8,93 @@
 	</head>
 	<body>
 		<div class="container">
-			<form class="form-horizontal">
-				<fieldset>
-					<legend>Search Form</legend>
-					<div class="form-group">
-						<label for="searchItem" class="col-lg-2 control-label">Search</label>
-						<div class="col-lg-10">
-							<input type="text" class="form-control" id="searchItem" placeholder="Search">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="age" class="col-lg-2 control-label">Age</label>
-						<div class="col-lg-10">
-							<select class="form-control" id="age">
-								<option>18</option>
-								<option>19</option>
-								<option>20</option>
-								<option>21</option>
-								<option>22</option>
-							</select>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="country" class="col-lg-2 control-label">Country</label>
-						<div class="col-lg-10">
-							<select class="form-control" id="country">
-								<option>Bulgaria</option>
-								<option>Germany</option>
-								<option>Sweden</option>
-								<option>USA</option>
-								<option>China</option>
-							</select>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="town" class="col-lg-2 control-label">Town</label>
-						<div class="col-lg-10">
-							<input type="text" class="form-control" id="town" placeholder="Enter Town">
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="col-lg-2 control-label">Subscription</label>
-						<div class="col-lg-10">
-							<div class="radio">
-								<label>
-									<input type="radio" name="optionsRadios" id="subscriber" value="subscriber" checked="">
-									Subscriber
-								</label>
-							</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="optionsRadios" id="non-subscriber" value="non-subscriber">
-									Non-Subscriber
-								</label>
+			<div class="jumbotron">
+				<form class="form-horizontal">
+					<fieldset>
+						<legend>Search Form</legend>
+						<div class="form-group">
+							<label for="searchItem" class="col-lg-2 control-label">Search</label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="searchItem" required="" placeholder="Search">
 							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label class="col-lg-2 control-label">Radios</label>
-						<div class="col-lg-10">
-							<div class="radio">
-								<label>
-									<input type="radio" name="optionsRadios" id="male" value="male">
-									Male
-								</label>
-							</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="optionsRadios" id="female" value="female">
-									Female
-								</label>
+						<div class="form-group">
+							<label for="age" class="col-lg-2 control-label">Age</label>
+							<div class="col-lg-10">
+								<select class="form-control" id="age">
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+								</select>
 							</div>
 						</div>
-					</div>
-					
-					<div class="form-group">
-						<div class="col-lg-10 col-lg-offset-2">
-							<button type="submit" class="btn btn-primary">Submit</button>
-							<button type="reset" class="btn btn-default">Cancel</button>
+						<div class="form-group">
+							<label for="country" class="col-lg-2 control-label">Country</label>
+							<div class="col-lg-10">
+								<select class="form-control" id="country">
+									<option>Bulgaria</option>
+									<option>Germany</option>
+									<option>Sweden</option>
+									<option>USA</option>
+									<option>China</option>
+								</select>
+							</div>
 						</div>
-					</div>
-				</fieldset>
-			</form>
+						<div class="form-group">
+							<label for="town" class="col-lg-2 control-label">Town</label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="town" required="" placeholder="Enter Town">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-2 control-label">Subscription</label>
+							<div class="col-lg-10">
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsSubscription" id="subscriber" value="subscriber">
+										Subscriber
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsSubscription" id="non-subscriber" value="non-subscriber">
+										Non-Subscriber
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-2 control-label">Gender</label>
+							<div class="col-lg-10">
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsGender" id="male" value="male">
+										Male
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsGender" id="female" value="female">
+										Female
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-10 col-lg-offset-2">
+								<button type="reset" class="btn btn-default">Cancel</button>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="scripts/jquery.noty.packaged.min.js"></script>
+		<script src="scripts/searchValidation.js"></script>
 	</body>
 </html>

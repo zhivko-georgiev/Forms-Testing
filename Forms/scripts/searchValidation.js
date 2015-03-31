@@ -3,9 +3,9 @@ $("#searchItem").change(function() {
 	var searchLength = searchField.value.length;
 	if (searchLength < 3 || searchLength > 50) {
 		$(this).after("<div class='alert alert-warning' id='success-alert' role='alert'>The search value should be between 3 and 50 chars long!</div>");
-		$("#success-alert").fadeTo(1000, 500).slideUp(500, function() {
-			$("#success-alert").alert('close');
-		});
+//		$("#success-alert").fadeTo(1000, 500).slideUp(500, function() {
+//			$("#success-alert").alert('close');
+//		});
 	}
 });
 
@@ -16,15 +16,15 @@ $("#town").change(function() {
 
 	if (townLength < 4 || townLength > 20) {
 		$(this).after("<div class='alert alert-warning' id='success-alert' role='alert'>The town value should be between 4 and 20 chars long!</div>");
-		$("#success-alert").fadeTo(1000, 500).slideUp(500, function() {
-			$("#success-alert").alert('close');
-		});
+//		$("#success-alert").fadeTo(1000, 500).slideUp(500, function() {
+//			$("#success-alert").alert('close');
+//		});
 	} else {
 		if (regex.test($('#town').val())) {
 			$(this).after("<div class='alert alert-warning' id='success-alert' role='alert'>No Special Symbols and numbers are allowed!!!</div>");
-			$("#success-alert").fadeTo(1000, 500).slideUp(500, function() {
-				$("#success-alert").alert('close');
-			});
+//			$("#success-alert").fadeTo(1000, 500).slideUp(500, function() {
+//				$("#success-alert").alert('close');
+//			});
 		}
 	}
 });
